@@ -4,8 +4,8 @@ require 'spec_helper'
 describe Stately do
   before do
     @order_class = Class.new(OpenStruct) do
-      stately :start => :processing do
-        state :completed do
+      stately :start => :processing, :attr => :state do
+        state :completed, :action => :complete do
           prevent_from :refunded
 
           before_transition :from => :processing, :do => :before_completed
@@ -16,7 +16,7 @@ describe Stately do
           validate :validates_credit_card
         end
 
-        state :invalid do
+        state :invalid, :action => :invalidate do
           prevent_from :completed, :refunded
         end
 

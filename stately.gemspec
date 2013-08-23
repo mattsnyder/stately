@@ -2,7 +2,7 @@ $LOAD_PATH << File.expand_path('../lib', __FILE__)
 require 'stately/version'
 
 Gem::Specification.new do |s|
-  s.name        = 'stately'
+  s.name        = 'mattsnyder-stately'
   s.version     = Stately::VERSION
   s.authors     = ['Ryan Twomey']
   s.email       = ['rtwomey@gmail.com']

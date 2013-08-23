@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    stately (0.2.0)
+    mattsnyder-stately (0.2.1)
 
 GEM
   remote: http://rubygems.org/
@@ -26,9 +26,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  mattsnyder-stately!
   rake
   rdoc
   redcarpet (~> 2.2.2)
   rspec (~> 2.0)
-  stately!
   yard (~> 0.8.3)
